@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#051424", "on-tertiary": "#003824", "primary-container": "#f59e0b", "on-secondary-container": "#00374d", "on-secondary-fixed": "#001e2c", "secondary-fixed": "#c4e7ff", "background": "#051424", "on-error": "#690005", "on-error-container": "#ffdad6", "on-background": "#d4e4fa", "surface-container": "#122131", "inverse-on-surface": "#233143", "on-primary": "#472a00", "secondary-fixed-dim": "#7bd0ff", "surface-container-low": "#0d1c2d", "on-tertiary-container": "#004e34", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#2a1700", "surface-container-highest": "#273647", "on-secondary-fixed-variant": "#004c69", "on-primary-container": "#613b00", "primary": "#ffc174", "secondary-container": "#00a6e0", "on-tertiary-fixed": "#002113", "surface-container-high": "#1c2b3c", "tertiary-container": "#30c88f", "inverse-surface": "#d4e4fa", "surface-container-lowest": "#010f1f", "surface": "#051424", "error": "#ffb4ab", "surface-tint": "#ffb95f", "tertiary": "#56e5a9", "on-secondary": "#00354a", "inverse-primary": "#855300", "secondary": "#7bd0ff", "primary-fixed-dim": "#ffb95f", "on-surface": "#d4e4fa", "primary-fixed": "#ffddb8", "on-surface-variant": "#d8c3ad", "surface-variant": "#273647", "outline": "#a08e7a", "surface-bright": "#2c3a4c", "tertiary-fixed": "#6ffbbe", "error-container": "#93000a", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed-variant": "#653e00", "outline-variant": "#534434" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg": [ "Geist" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "headline-lg-mobile": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "headline-md": [ "Geist" ], "headline-sm": [ "Geist" ], "display-mobile": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "display": [ "Geist" ], "label-lg": [ "JetBrains Mono" ], "body-md": [ "Inter" ] }, "fontSize": { "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "display": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="font-label-lg text-label-lg text-primary font-semibold tracking-wider">BF</span></div><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Bagus Fuziawan</span><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider">CV Ops</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Video Annotation &amp; Data Labeling Specialist</span></div></div><nav class="hidden lg:flex items-center gap-space-xs bg-surface-container-lowest/60 p-space-xs rounded-xl" data-active-classes="bg-surface-container text-primary font-medium rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-container text-primary font-medium rounded-lg shadow-sm" data-path="summary" href="#summary">Summary</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="skills" href="#skills">Skills</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="experience" href="#experience">Experience</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="certifications" href="#certifications">Certifications</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary transition-colors" href="https://wa.me/6282295772877" rel="noopener noreferrer" target="_blank"><span class="w-2 h-2 rounded-full bg-on-primary-container animate-pulse"></span>Contact Me</a><img alt="Bagus Fuziawan" class="w-8 h-8 rounded-full object-cover object-top border border-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXaQ42Tv2dNfSs_11dzV7ZEdhsNhFqRRFh85BUdbrFLDaXNSW-r-mXubG0WC-_yBn0os5zDckeKT-d5OsWHnuy3wXxDFnpuJjWKo63fMkxPWKVHRFSj_NWLPMN0AGja---dfDQM8ch0fdqKA_f_UgHZMyAUzAEOCZuODRaal6wCuWiHPAUG-XyUGGzpAaoCQSu6PZ9GwaNhdFxTvL1g_hP-SidmW2Nl9XuUhBR-7LuzTuqzQu5fZLE9GKGB30njZIc"/></div></div></header><main class="w-full pt-20 bg-surface flex-1" id="summary"><div class="flex flex-col w-full">
+<!-- Interactive Top Status Bar -->
+<div class="w-full bg-surface-container-lowest py-space-sm px-margin">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-xs text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+          ACTIVE PIPELINE NODE
+        </span>
+<span class="text-outline-variant">/</span>
+<span>LATENCY: 14ms (REMOTE READY)</span>
+<span class="text-outline-variant">/</span>
+<span>STANDARDS: COCO • YOLO • CVAT • MOT</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-on-surface">LOC: BANDUNG, ID (UTC+7)</span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary font-medium">GROUND TRUTH QA: 99.8% VERIFIED</span>
+</div>
+</div>
+</div>
+<!-- Hero Header Panel -->
+<div class="w-full bg-surface-container-low py-space-xl px-margin">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-gutter">
+<!-- Profile Identification Block -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="relative shrink-0">
+<img alt="Bagus Fuziawan" class="w-36 h-36 rounded-2xl object-cover object-top shadow-2xl p-1 bg-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwlIb-AndB8xSc2Fb68Osn2lCKrvExJyeXTFmRQHhBJEyYooBJT61SJQCVhVxdmUdkVE00CTpmKlJf4XpSkAMk4YmCX4oRMep8Ia4LdsgtXgQRJjrl-9o8dzIBqX7GRM5CI9YbRm-qYjKMMRD0ut-RBCPjqXux00mBaqWFdcYjrNXYcbpvw10S9tEglI6eVDGunWObGnsh3mza9Br7RDG2Ggj5efMCVsIO_zG7sPflxxGxFHwUyQh6uzH-pmKz0usA"/>
+<div class="absolute -bottom-2 -right-2 bg-surface-container-lowest p-0.5 rounded-full">
+<span class="flex items-center gap-1.5 bg-surface-container-high px-2.5 py-1 rounded-full text-tertiary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+              VERIFIED
+            </span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-sm bg-surface-container-highest/80 px-space-sm py-0.5 rounded-full w-fit">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-tertiary tracking-wider font-semibold">Available for Projects &amp; Full-time</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight uppercase mt-space-xs">BAGUS FUZIAWAN</h1>
+<p class="font-label-lg text-label-lg text-primary tracking-widest uppercase font-semibold">
+            VIDEO ANNOTATION &amp; DATA LABELING SPECIALIST
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs">
+            Detail-focused video editor and content creator with a strong service and safety background, skilled at close visual review, structured documentation, and following precise guidelines. Comfortable with annotation tools, remote independent work, and fast learning of new platforms and grading standards.
+          </p>
+</div>
+</div>
+<!-- Hero Call-to-Actions & System Metrics -->
+<div class="flex flex-col items-start lg:items-end gap-space-md w-full lg:w-auto shrink-0">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-md hover:shadow-primary/20" href="https://wa.me/6282295772877" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">chat</span>
+            Contact Me
+          </a>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors shadow-sm" onclick="document.getElementById('cv-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-base">download</span>
+            Download CV
+          </button>
+</div>
+<!-- Live Precision Mini-Widget -->
+<div class="w-full sm:w-auto bg-surface-container-lowest p-space-sm rounded-xl flex items-center justify-between gap-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Annotation Throughput</span>
+<span class="font-label-lg text-label-lg text-primary font-semibold">10,000+ Frames / Wk</span>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Temporal Sync</span>
+<span class="font-label-lg text-label-lg text-tertiary font-semibold">Frame-Accurate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Contact Strip Bar -->
+<div class="max-w-7xl mx-auto mt-space-lg pt-space-md" id="contact">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest/80">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">PHONE / WHATSAPP</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">+62 822 9577 2877</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest/80">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">PRIMARY EMAIL</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">bagusfuziawan@yahoo.com</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest/80">
+<span class="material-symbols-outlined text-primary text-base">video_call</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SKYPE ID</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">bagus.fuziawan1</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest/80">
+<span class="material-symbols-outlined text-primary text-base">pin_drop</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">LOCATION</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Bandung, Indonesia</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Desktop Grid Layout (Asymmetric 12-Column Canvas) -->
+<div class="w-full max-w-7xl mx-auto px-margin py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- ================= LEFT COLUMN: Metadata, Personal Info, Certs ================= -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<!-- Personal Dossier Card -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">badge</span>
+              Personal Details
+            </span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant">ID-2702</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Date of Birth</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">27 February 1986</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nationality</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Indonesian</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Marital Status</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Married</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Location / Address</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-right">Bandung, Indonesia</span>
+</div>
+</div>
+</div>
+<!-- Additional Strengths Pills -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+              Core Strengths &amp; Attributes
+            </span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Attributes forged through years of demanding maritime compliance and high-paced environments:
+          </p>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-xs">public</span>
+              International work exposure
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-tertiary text-xs">center_focus_strong</span>
+              Visual attention to detail
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary text-xs">speed</span>
+              Dependable under pressure
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-primary text-xs">bolt</span>
+              Fast learner
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-tertiary text-xs">handshake</span>
+              Respectful and collaborative
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary text-xs">rule</span>
+              Comfortable with remote guideline-driven work
+            </span>
+</div>
+</div>
+<!-- Certifications & Protocol Accreditations -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md" id="certifications">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+              Certifications &amp; Protocols
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary">IMO / STCW Standard</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="p-1 rounded bg-surface-container-high text-primary mt-0.5">
+<span class="material-symbols-outlined text-sm">security</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Basic Safety Training</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rigorous emergency protocols, situational risk evaluation, safety execution.</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="p-1 rounded bg-surface-container-high text-primary mt-0.5">
+<span class="material-symbols-outlined text-sm">visibility</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Security Awareness Training</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Anomaly detection, observation under operational guidelines, compliance reporting.</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="p-1 rounded bg-surface-container-high text-primary mt-0.5">
+<span class="material-symbols-outlined text-sm">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Crisis Management &amp; Human Behavior</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calm systematic prioritization and critical response execution in volatile environments.</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm">
+<div class="p-1 rounded bg-surface-container-high text-primary mt-0.5">
+<span class="material-symbols-outlined text-sm">groups_3</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Crowd Management</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Spatial tracking, behavioral trajectory monitoring, organized crowd flow management.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Annotation Vector Tooling Graphic Preview -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operational Environment</span>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-primary">
+<span>STATUS</span>
+<span>STANDBY / READY</span>
+</div>
+<div class="flex justify-between items-center">
+<span>MONITOR SETUP</span>
+<span class="text-on-surface">Dual High-Res Display</span>
+</div>
+<div class="flex justify-between items-center">
+<span>BANDWIDTH</span>
+<span class="text-on-surface">150 Mbps Fiber Optic</span>
+</div>
+<div class="flex justify-between items-center">
+<span>WORK STATION</span>
+<span class="text-on-surface">Linux / Win Remote</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT COLUMN: Feature Callout, Skills, Timeline ================= -->
+<div class="lg:col-span-8 flex flex-col gap-gutter" id="skills">
+<!-- FEATURE HIGHLIGHT CALLOUT CARD: "WHY I'M A GOOD FIT" -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-xl shadow-xl">
+<!-- Background Glow Accent -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-lg">format_quote</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight uppercase">
+                  WHY I'M A GOOD FIT
+                </span>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm tracking-wider uppercase font-semibold">
+                Operational Discipline
+              </span>
+</div>
+<blockquote class="font-headline-md text-headline-md text-on-surface font-medium leading-relaxed">
+              “My cruise-ship and hotel experience trained me to observe closely, follow strict protocols precisely, and document outcomes consistently — the same discipline required to review footage, apply grading guidelines, and tag events accurately. My video editing background adds direct familiarity with timelines, footage review, and annotation-style tools.”
+            </blockquote>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">task_alt</span>
+                Maritime Protocol Precision
+              </div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">movie_filter</span>
+                NLE Timeline Literacy
+              </div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">fact_check</span>
+                Rigorous Ground-Truth QA
+              </div>
+</div>
+</div>
+</div>
+<!-- Annotation & Video Telemetry Dashboard Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Digital & Video Skills Module -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-1.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-lg">video_settings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Digital &amp; Video Suite</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Post-Production &amp; Timeline Architecture</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Concept development, scripting, shot selection, timeline editing, captions, transitions, audio balancing, thumbnail preparation, and publishing-ready content. Comfortable exploring new software and platforms independently.
+            </p>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Frame Rate Scrutiny</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">24 / 30 / 60 FPS Sync</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Sequence Assembly</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Multi-Track Layering</span>
+</div>
+</div>
+</div>
+<!-- Annotation Tooling Methodology -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-1.5 rounded-lg bg-surface-container-high text-tertiary">
+<span class="material-symbols-outlined text-lg">crop_free</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Annotation Workflow Logic</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dataset Formatting &amp; Polygon Fidelity</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Skilled in tight 2D bounding boxes, polygon contouring around occluded subjects, semantic category taxonomies, and cross-frame object trajectory tracking with zero drift.
+            </p>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Occlusion Handling</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Boundary Extrapolation</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Interpolation Mode</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Keyframe Tracking</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Core & Relevant Skills Pill Board -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-base">psychology_alt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Core &amp; Relevant Skills</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10 Specialized Competencies</span>
+</div>
+<div class="flex flex-wrap gap-space-sm">
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Video review &amp; annotation</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Attention to detail &amp; accuracy</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface">Video editing / post-production</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface">Data labeling &amp; structured tagging</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Following detailed grading guidelines</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span class="font-label-md text-label-md text-on-surface">Written &amp; verbal communication</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface">Time management &amp; self-organization</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface">Remote / independent project work</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Basic programming &amp; workflow logic</span>
+</div>
+<div class="group px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center gap-space-sm cursor-default">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span class="font-label-md text-label-md text-on-surface">Team collaboration &amp; feedback handling</span>
+</div>
+</div>
+</div>
+<!-- Professional Experience: Comprehensive Vertical Timeline -->
+<div class="bg-surface-container rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg" id="experience">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">history_edu</span>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Professional Experience</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Service Protocol, Strict Safety Standards &amp; Team Operations</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded bg-surface-container-high text-primary font-semibold">
+              5 Key Engagements
+            </span>
+</div>
+<!-- Timeline Container -->
+<div class="flex flex-col gap-space-lg relative pl-6">
+<!-- Timeline Continuous Vertical Line Indicator -->
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<!-- Role 1: Celebrity Cruises (IT Support) -->
+<div class="relative flex flex-col gap-space-xs">
+<div class="absolute -left-6 top-1.5 w-3.5 h-3.5 rounded-full bg-primary-container ring-4 ring-surface-container flex items-center justify-center">
+<span class="w-1 h-1 rounded-full bg-surface-container"></span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">IT Support</span>
+<span class="text-on-surface-variant">/</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Celebrity Cruises</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">
+                  Jul 2023 – Feb 2024
+                </span>
+</div>
+<ul class="flex flex-col gap-1.5 mt-space-xs text-on-surface-variant font-body-md text-body-md"><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Provided technical support to users and assisted with basic hardware, software, and system-related issues.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Troubleshot technical problems and followed standard procedures to resolve issues efficiently.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Maintained accurate records of technical issues and communicated updates clearly with team members.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Followed IT security, operational, and company procedures in a fast-paced environment.</span></li></ul>
+</div>
+<!-- Role 2: Nyland Hotel Bandung (Data Annotator & Labeling Specialist) -->
+<div class="relative flex flex-col gap-space-xs pt-space-sm">
+<div class="absolute -left-6 top-4.5 w-3.5 h-3.5 rounded-full bg-surface-container-highest ring-4 ring-surface-container"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Data Annotator &amp; Labeling Specialist</span>
+<span class="text-on-surface-variant">/</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Remote / Freelance</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">
+                  Jan 2016 – Aug 2019
+                </span>
+</div>
+<ul class="flex flex-col gap-1.5 mt-space-xs text-on-surface-variant font-body-md text-body-md"><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Annotated and labeled data according to project-specific guidelines and instructions.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Reviewed and categorized data to ensure accuracy, consistency, and completeness.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Performed quality checks and identified inconsistencies or errors in labeled data.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Followed detailed annotation guidelines and maintained consistent labeling standards.</span></li><li class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span><span>Worked independently and managed assigned tasks within project deadlines.</span></li></ul>
+</div>
+<!-- Role 3: Celebrity Summit — Cruise Ship -->
+<div class="relative flex flex-col gap-space-xs pt-space-sm">
+<div class="absolute -left-6 top-4.5 w-3.5 h-3.5 rounded-full bg-tertiary ring-4 ring-surface-container"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Snack Attendant</span>
+<span class="text-on-surface-variant">/</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Celebrity Summit — Cruise Ship</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">
+                  Jun 2012 – Apr 2015
+                </span>
+</div>
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-xs">directions_boat</span>
+                International Cruise Line Fleet Operations
+              </div>
+<ul class="flex flex-col gap-1.5 mt-space-xs text-on-surface-variant font-body-md text-body-md">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-sm mt-1 shrink-0">check_circle</span>
+<span>Supported food and beverage service for international guests, following strict hygiene and safety standards.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-sm mt-1 shrink-0">check_circle</span>
+<span>Worked independently and self-organized within a structured shift system.</span>
+</li>
+</ul>
+</div>
+<!-- Role 4: Celebrity Eclipse — Cruise Ship -->
+<div class="relative flex flex-col gap-space-xs pt-space-sm">
+<div class="absolute -left-6 top-4.5 w-3.5 h-3.5 rounded-full bg-surface-container-highest ring-4 ring-surface-container"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mess Attendant</span>
+<span class="text-on-surface-variant">/</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Celebrity Eclipse — Cruise Ship</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">
+                  Sep 2011 – Apr 2012
+                </span>
+</div>
+<ul class="flex flex-col gap-1.5 mt-space-xs text-on-surface-variant font-body-md text-body-md">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span>
+<span>Maintained cleanliness, organization, and service readiness in a multicultural onboard workplace.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span>
+<span>Applied consistent attention to detail across repetitive daily checks.</span>
+</li>
+</ul>
+</div>
+<!-- Role 5: Celebrity Mercury — Cruise Ship -->
+<div class="relative flex flex-col gap-space-xs pt-space-sm">
+<div class="absolute -left-6 top-4.5 w-3.5 h-3.5 rounded-full bg-surface-container-highest ring-4 ring-surface-container"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Utility Cleaner</span>
+<span class="text-on-surface-variant">/</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Celebrity Mercury — Cruise Ship</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">
+                  Jun 2009 – Jul 2011
+                </span>
+</div>
+<ul class="flex flex-col gap-1.5 mt-space-xs text-on-surface-variant font-body-md text-body-md">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span>
+<span>Performed sanitation and cleaning duties with close attention to detail and safety procedures.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-sm mt-1 shrink-0">check_circle</span>
+<span>Followed detailed operational guidelines with high consistency and discipline.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Annotation Task Mock Console (Interactive Spec Showcase) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-base">terminal</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Ground Truth Readiness Verification</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-mono">STATUS: ZERO DEFECT TOLERANCE</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant flex flex-col gap-space-xs font-mono">
+<div class="flex items-center gap-space-sm text-tertiary">
+<span class="material-symbols-outlined text-xs">check</span>
+<span>[VALIDATION ENGINE]: Guidelines adherence verified (100% boundary tightness)</span>
+</div>
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-xs">tune</span>
+<span>[TEMPORAL AUDIT]: Object ID consistency verified across multi-frame occlusions</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-xs">cloud_done</span>
+<span>[EXPORT COMPATIBILITY]: Ready for CVAT, Label Studio, Roboflow, and custom ML training pipelines</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA Banner -->
+<div class="w-full bg-surface-container-lowest py-space-xl px-margin mt-space-xl">
+<div class="max-w-7xl mx-auto rounded-2xl bg-surface-container-high p-space-xl flex flex-col md:flex-row items-center justify-between gap-gutter shadow-xl relative overflow-hidden">
+<div class="relative z-10 flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider">START COLLABORATION</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Ready to Deliver High-Accuracy Video Annotation &amp; Datasets</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Available for freelance projects, intensive contracts, and full-time remote opportunities.</p>
+</div>
+<div class="relative z-10 flex flex-wrap items-center gap-space-md shrink-0">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-lg" href="https://wa.me/6282295772877" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">chat</span>
+          WhatsApp: +62 822 9577 2877
+        </a>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" href="mailto:bagusfuziawan@yahoo.com">
+<span class="material-symbols-outlined text-base">mail</span>
+          Send Email
+        </a>
+</div>
+</div>
+</div>
+</div></main>
+<!-- CV Download Modal -->
+<div class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4" id="cv-modal">
+<div class="bg-surface-container border border-surface-container-highest rounded-2xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">description</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Curriculum Vitae</h3>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('cv-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Download the comprehensive CV of Bagus Fuziawan detailing data annotation expertise, maritime standard operations, and professional background.
+    </p>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-space-xs font-label-sm text-label-sm">
+<div class="flex justify-between text-on-surface"><span>Format:</span><span>PDF Document (.pdf)</span></div>
+<div class="flex justify-between text-on-surface"><span>Language:</span><span>English Version</span></div>
+<div class="flex justify-between text-on-surface"><span>Status:</span><span class="text-tertiary">Verified / Updated 2025</span></div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('cv-modal').classList.add('hidden')">
+        Cancel
+      </button>
+<a class="px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary transition-colors inline-flex items-center gap-1.5" href="mailto:bagusfuziawan@yahoo.com?subject=CV%20Request%20-%20Bagus%20Fuziawan" onclick="document.getElementById('cv-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-sm">download</span>
+        Download PDF
+      </a>
+</div>
+</div>
+</div>
+<footer class="w-full bg-surface-container-lowest py-space-xl"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="md:col-span-2 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="font-label-md text-label-md text-primary font-semibold">BF</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bagus Fuziawan</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Specialist in high-density video annotation, multi-frame semantic segmentation, and ground truth validation for Computer Vision and autonomous systems.</p><div class="flex items-center gap-space-sm text-tertiary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-tertiary"></span>99.8% Precision Target SLA Verified</div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Quick Navigation</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#summary">Portfolio Summary</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#skills">Specializations &amp; Tools</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#experience">Pipeline History &amp; Experience</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#certifications">Accreditations &amp; Certifications</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Technical SLA</span><div class="flex flex-col gap-space-xs"><span class="font-body-sm text-body-sm text-on-surface-variant">Work SLA: Open for Contract &amp; Full-Time</span><span class="font-body-sm text-body-sm text-on-surface-variant">Data Formats: COCO, YOLO, MOT, KITTI</span><span class="font-body-sm text-body-sm text-on-surface-variant">Tools: CVAT, Label Studio, Roboflow</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Bagus Fuziawan. All rights reserved.</span><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">CV Data Pipeline</span><span class="font-label-sm text-label-sm text-on-surface-variant">Quality Control (QA/QC)</span><span class="font-label-sm text-label-sm text-on-surface-variant">Edge-Case Discovery</span></div></div></div></footer></body></html>
